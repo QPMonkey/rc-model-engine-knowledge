@@ -80,33 +80,31 @@ Diese Liste hilft dir, die häufigsten Ursachen für Startprobleme oder schlecht
 
 
 ```mermaid
-    graph TD
-    A[Motor startet nicht] --> B{Lässt sich der<br/>Starter ziehen?}
+graph TD
+    %% Globales Design
+    classDef default fill:#ffffff,stroke:#333,stroke-width:1px,color:#000000;
+    classDef highlight fill:#ffcc00,stroke:#333,stroke-width:2px,color:#000000;
+    classDef action fill:#e1f5fe,stroke:#01579b,stroke-width:1px,color:#000000;
+
+    A[Motor startet nicht] :::highlight --> B{Starter<br/>ziehbar?}
     
-    B -- Nein --> C[Motor ist abgesoffen / blockiert]
-    C --> C1[Glühkerze raus & leerpumpen]
+    B -- Nein --> C[Motor ist<br/>abgesoffen]
+    C --> C1[Kerze raus & leerpumpen] :::action
     
-    B -- Ja --> D{Glüht die Kerze?}
-    D -- Nein --> E[Glühstecker leer oder Kerze defekt]
-    E --> E1[Akku laden oder Kerze tauschen]
+    B -- Ja --> D{Glüht die<br/>Kerze?}
+    D -- Nein --> E[Glühstecker leer /<br/>Kerze defekt]
+    E --> E1[Laden / Tauschen] :::action
     
-    D -- Ja --> F{Kommt Sprit am<br/>Vergaser an?}
-    F -- Nein --> G[Tank leer / Schlauch geknickt]
-    G --> G1[Tanken / Druckleitung prüfen]
+    D -- Ja --> F{Sprit am<br/>Vergaser?}
+    F -- Nein --> G[Tank leer /<br/>Schlauch zu]
+    G --> G1[Tanken / Primen] :::action
     
-    F -- Ja --> H[Vergasereinstellung prüfen]
+    F -- Ja --> H[Vergaser-Check]
     H --> H1{Zündet er kurz?}
     
-    H1 -- Nein --> I[Werkseinstellung HSN/LSN laden]
-    H1 -- Ja --> J{Geht beim<br/>Gasgeben aus?}
+    H1 -- Nein --> I[Werkseinstellung laden] :::action
+    H1 -- Ja --> J{Verhalten beim<br/>Gasgeben?}
     
-    J -- Bwaaaaa-Sound --> K[Zu Fett: HSN magerer stellen]
-    J -- Hrrr-Klingeln --> L[Zu Mager: HSN fetter stellen]
-    J -- Geht sofort aus --> M[LSN oder Standgas justieren]
-    
-    style A fill:#f96,stroke:#333,stroke-width:2px
-    style C1 fill:#ccf,stroke:#333
-    style E1 fill:#ccf,stroke:#333
-    style G1 fill:#ccf,stroke:#333
-    style I fill:#ccf,stroke:#333
+    J -- 'Bwaaaaa' --> K[Zu Fett: HSN magerer] :::action
+    J -- 'Hrrrr' --> L[Zu Mager: HSN fetter] :::action
 ```
