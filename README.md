@@ -20,9 +20,17 @@ Der Motor geht aus? Er qualmt zu stark? Hier findest du Lösungen für die häuf
 
 ---
 
+
 ## 🤝 Mitmachen
 Dieses Projekt lebt von deinen Erfahrungen! Möchtest du einen neuen Bereich hinzufügen oder Tipps ergänzen? 
 Schau in den [Contributing Guide](CONTRIBUTING.md).
+
+
+---
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support%20my%20Work-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/DEIN_USERNAME)
+
+---
+
 
 ## 📜 Lizenz & Disclaimer
 Nutzung auf eigene Gefahr unter der [CC-BY-4.0 Lizenz](LICENSE).
