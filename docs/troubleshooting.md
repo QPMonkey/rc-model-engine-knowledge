@@ -76,3 +76,37 @@ Diese Liste hilft dir, die häufigsten Ursachen für Startprobleme oder schlecht
     * Servo Neutralstellung und Failsavestellung überprüfen; Trimming an der Fernsteuerung einstellen.
 * **Grund 3: LSN zu mager (Motor überhitzt oder dreht nicht hoch)**
     * Gemischnadel (LSN) fetter stellen.
+
+
+
+```mermaid
+    graph TD
+    A[Motor startet nicht] --> B{Lässt sich der<br/>Starter ziehen?}
+    
+    B -- Nein --> C[Motor ist abgesoffen / blockiert]
+    C --> C1[Glühkerze raus & leerpumpen]
+    
+    B -- Ja --> D{Glüht die Kerze?}
+    D -- Nein --> E[Glühstecker leer oder Kerze defekt]
+    E --> E1[Akku laden oder Kerze tauschen]
+    
+    D -- Ja --> F{Kommt Sprit am<br/>Vergaser an?}
+    F -- Nein --> G[Tank leer / Schlauch geknickt]
+    G --> G1[Tanken / Druckleitung prüfen]
+    
+    F -- Ja --> H[Vergasereinstellung prüfen]
+    H --> H1{Zündet er kurz?}
+    
+    H1 -- Nein --> I[Werkseinstellung HSN/LSN laden]
+    H1 -- Ja --> J{Geht beim<br/>Gasgeben aus?}
+    
+    J -- Bwaaaaa-Sound --> K[Zu Fett: HSN magerer stellen]
+    J -- Hrrr-Klingeln --> L[Zu Mager: HSN fetter stellen]
+    J -- Geht sofort aus --> M[LSN oder Standgas justieren]
+    
+    style A fill:#f96,stroke:#333,stroke-width:2px
+    style C1 fill:#ccf,stroke:#333
+    style E1 fill:#ccf,stroke:#333
+    style G1 fill:#ccf,stroke:#333
+    style I fill:#ccf,stroke:#333
+```
