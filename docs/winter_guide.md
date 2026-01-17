@@ -40,6 +40,3 @@ Hast du eigene Erfahrungen oder spezielle Setups für bestimmte Motoren (z.B. .2
 2. Erstelle einen neuen Branch.
 3. Füge deine Tipps hinzu.
 4. Erstelle einen Pull Request!
-
-## 📜 Lizenz
-Dieses Projekt ist unter der **Creative Commons Attribution 4.0 International (CC-BY-4.0)** lizenziert. Du darfst die Inhalte teilen und adaptieren, solange du die Quelle nennst.
