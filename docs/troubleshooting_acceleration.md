@@ -5,7 +5,7 @@ Wenn der Motor im Leerlauf tuckert, aber beim Gasgeben "verhungert", dumpf kling
 ## 📋 Der Schlachtplan zum Hochdrehen
 
 ### 1. Die "Warm-up" Methode (Temperatur-Check)
-Nitro-Motoren benötigen eine gewisse Grundhitze, um den Kraftstoff sauber zu vernebeln. Im Januar kühlt der Motor im Standgas oft unter die kritische Grenze ab.
+Nitro-Motoren benötigen eine gewisse Grundhitze, um den Kraftstoff sauber zu vernebeln. Gerade in kälteren Jahreszeiten kühlt der Motor im Standgas oft unter die kritische Grenze ab.
 * **Maßnahme:** Hebe das Auto hoch, sodass die Räder frei drehen können.
 * **Aktion:** Gib vorsichtig kurze, stoßweise Gasstöße (kein Vollgas!). 
 * **Ziel:** Das überschüssige Öl aus dem Kurbelgehäuse "freirotzen", bis der Motor williger anspricht. Er sollte mindestens **60-70°C** erreichen.
