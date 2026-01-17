@@ -16,6 +16,7 @@ Damit der Motor Jahre hält: Reinigung, Luftfilterpflege und der richtige Einsat
 
 ### 🛠️ [Troubleshooting: Wenn er nicht läuft](docs/troubleshooting.md)
 Der Motor geht aus? Er qualmt zu stark? Hier findest du Lösungen für die häufigsten Probleme.
+* [Motor dreht nicht hoch / Beschleunigungsprobleme](docs/troubleshooting_acceleration.md)
 
 ---
 
