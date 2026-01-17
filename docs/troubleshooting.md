@@ -81,30 +81,34 @@ Diese Liste hilft dir, die häufigsten Ursachen für Startprobleme oder schlecht
 
 ```mermaid
 graph TD
-    %% Globales Design
-    classDef default fill:#ffffff,stroke:#333,stroke-width:1px,color:#000000;
-    classDef highlight fill:#ffcc00,stroke:#333,stroke-width:2px,color:#000000;
-    classDef action fill:#e1f5fe,stroke:#01579b,stroke-width:1px,color:#000000;
-
-    A[Motor startet nicht] :::highlight --> B{Starter<br/>ziehbar?}
+    A[Motor startet nicht] --> B{Starter<br/>ziehbar?}
     
     B -- Nein --> C[Motor ist<br/>abgesoffen]
-    C --> C1[Kerze raus & leerpumpen] :::action
+    C --> C1[Kerze raus & leerpumpen]
     
     B -- Ja --> D{Glüht die<br/>Kerze?}
     D -- Nein --> E[Glühstecker leer /<br/>Kerze defekt]
-    E --> E1[Laden / Tauschen] :::action
+    E --> E1[Laden / Tauschen]
     
     D -- Ja --> F{Sprit am<br/>Vergaser?}
     F -- Nein --> G[Tank leer /<br/>Schlauch zu]
-    G --> G1[Tanken / Primen] :::action
+    G --> G1[Tanken / Primen]
     
     F -- Ja --> H[Vergaser-Check]
     H --> H1{Zündet er kurz?}
     
-    H1 -- Nein --> I[Werkseinstellung laden] :::action
+    H1 -- Nein --> I[Werkseinstellung laden]
     H1 -- Ja --> J{Verhalten beim<br/>Gasgeben?}
     
-    J -- 'Bwaaaaa' --> K[Zu Fett: HSN magerer] :::action
-    J -- 'Hrrrr' --> L[Zu Mager: HSN fetter] :::action
+    J -- Bwaaaaa --> K[Zu Fett: HSN magerer]
+    J -- Hrrrr --> L[Zu Mager: HSN fetter]
+
+    %% Styles werden hier separat zugewiesen, um Fehler zu vermeiden
+    style A fill:#ffcc00,stroke:#333,color:#000
+    style C1 fill:#e1f5fe,stroke:#01579b,color:#000
+    style E1 fill:#e1f5fe,stroke:#01579b,color:#000
+    style G1 fill:#e1f5fe,stroke:#01579b,color:#000
+    style I fill:#e1f5fe,stroke:#01579b,color:#000
+    style K fill:#e1f5fe,stroke:#01579b,color:#000
+    style L fill:#e1f5fe,stroke:#01579b,color:#000
 ```
